@@ -1,4 +1,112 @@
 .recipeImage {
    width: 200px;
-   height: auto;
+   align-self: start;
+}
+
+.header{
+   height: 40px;
+   background-color: #56ccf2;
+   text-transform: uppercase;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.pageTitle {
+   float: left;
+   padding: 10px 20px;
+}
+
+.navigation{
+   display: flex;
+   padding: 10px 20px;
+   justify-content: flex-end;
+}
+
+.navitem {
+   padding: 0 15px 0 15px;
+}
+
+body{
+    margin: 0;
+ }
+
+.title {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 24px;
+}
+
+.recipeContainer {
+   margin: 24px;
+}
+
+.recipe {
+   border: solid 1px lightgray;
+   display: flex;
+   margin: 15px;
+}
+
+.recipeBox {
+   display: flex;
+   margin: 15px 15px 15px 15px;
+   justify-content: flex-start;
+}
+
+.recipeContent {
+   margin:24px;
+   font-family: Arial, Helvetica, sans-serif;
+   max-width: 300px;
+}
+
+.linktorecipe {
+   background-color: #f2c94c;
+   width: 100%;
+   font-size: 14px;
+   text-transform: uppercase;
+   border-radius: 8px;
+   border: 0;
+   height: 30px;
+   margin-top: 24px;
+}
+
+.linktorecipe a {
+   color: black;
+   text-decoration: none;
+   pad: 0 8px;
+   letter-spacing: 1px;
+}
+
+.footer {
+   height: 40px;
+   background-color: lightblue;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.copyright {
+   text-align: center;
+   padding: .5px;
+   font-size: 14px;
+   letter-spacing: .5px;
+}
+
+.link {
+   color: black;
+   font-size: 14px;
+   font-weight: bolder;
+   letter-spacing: .5px;
+}
+/* I expect this Media Querie to allow the Recipe 
+boxes to stack one on top of each other ones the screen is less that 800 px.
+It also allows the recipe box content to expend to up to 480px to fill the full
+width of the smaller screen. */
+
+@media only screen and (max-width:800px) {
+   .recipeBox {
+      margin: 0px;
+      flex-direction: column;
+   }
+   .recipeContent {
+      margin:24px;
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 480px;
+   }
+   
 }
